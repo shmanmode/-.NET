@@ -120,7 +120,7 @@ namespace LinqToObjects
 
             Console.ReadLine();
         }
-        static void Main7()
+        static void Main88()
         {
             AddRecs();
             var emps = lstEmp.Select(emp => emp);
