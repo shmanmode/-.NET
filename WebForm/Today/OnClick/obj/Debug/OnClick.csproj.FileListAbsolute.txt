@@ -1,0 +1,11 @@
+C:\Users\labadmin\source\repos\Today\OnClick\bin\Debug\OnClick.exe.config
+C:\Users\labadmin\source\repos\Today\OnClick\bin\Debug\OnClick.exe
+C:\Users\labadmin\source\repos\Today\OnClick\bin\Debug\OnClick.pdb
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.csprojAssemblyReference.cache
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.FrmHelloWorld.resources
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.Properties.Resources.resources
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.csproj.GenerateResource.cache
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.csproj.CoreCompileInputs.cache
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.exe
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.pdb
+C:\Users\labadmin\source\repos\Today\OnClick\obj\Debug\OnClick.FrmTextBoxes.resources

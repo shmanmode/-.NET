@@ -1,0 +1,8 @@
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\bin\Debug\UserLoginTool.dll
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\bin\Debug\UserLoginTool.pdb
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.csprojAssemblyReference.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.UserControl1.resources
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.csproj.GenerateResource.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.csproj.CoreCompileInputs.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.dll
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\UserLoginTool\obj\Debug\UserLoginTool.pdb

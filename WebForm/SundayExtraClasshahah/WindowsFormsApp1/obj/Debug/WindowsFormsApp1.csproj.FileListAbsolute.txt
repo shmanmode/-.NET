@@ -1,0 +1,14 @@
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\bin\Debug\UserLoginTool.dll
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\bin\Debug\UserLoginTool.pdb
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\labadmin\source\repos\SundayExtraClasshahah\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.NumericTextBox.resources
