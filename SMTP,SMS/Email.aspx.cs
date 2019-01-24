@@ -37,7 +37,7 @@ public partial class Email : System.Web.UI.Page
                 client.EnableSsl = true;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("cdac.ingenious@gmail.com", "Password888");
+                client.Credentials = new NetworkCredential("cdac@gmail.com", "Password123");
                 MailMessage msgobj = new MailMessage();
                 msgobj.To.Add(email);
                 msgobj.From = new MailAddress("cdac.ingenious@gmail.com");
@@ -57,8 +57,8 @@ public partial class Email : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         //SMS Sending------------------------------------------------------
-        String Mobile = "9757374616";
-        String Password = "Shivam@97";
+        String Mobile = "9876543210";
+        String Password = "Password123";
         String Message = "Succesfull Registration";
         String No = TxtPhone.Text;
         String Key = "panwaTcrCPf0GvZ8Uhgikj7xbo";
@@ -77,10 +77,10 @@ public partial class Email : System.Web.UI.Page
                 client.EnableSsl = true;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("cdac.ingenious@gmail.com", "Password888");
+                client.Credentials = new NetworkCredential("cdac@gmail.com", "Password123");
                 MailMessage msgobj = new MailMessage();
                 msgobj.To.Add(To.Text);
-                msgobj.From = new MailAddress("cdac.ingenious@gmail.com");
+                msgobj.From = new MailAddress("cdac@gmail.com");
                 msgobj.Subject = "CDAC-IGNENIOUS";
                 msgobj.Body = TxtUserName.Text +" registered successfully to CDAC-INGENIOUS ";
                 client.Send(msgobj);
@@ -102,8 +102,8 @@ public partial class Email : System.Web.UI.Page
         }
 
         ////SMS Sending------------------------------------------------------
-        //String Mobile = "9757374616";
-        //String Password = "Shivam@97";
+        //String Mobile = "9876543210";
+        //String Password = "Password123";
         //String Message = TxtUserName.Text + " registered successfully to CDAC-INGENIOUS ";
         //String No = TxtPhone.Text;
         //String Key = "panwaTcrCPf0GvZ8Uhgikj7xbo";
