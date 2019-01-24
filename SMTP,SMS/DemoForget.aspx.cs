@@ -43,10 +43,10 @@ public partial class DemoForget : System.Web.UI.Page
                 client.EnableSsl = true;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("cdac.ingenious@gmail.com", "Password888");
+                client.Credentials = new NetworkCredential("cdac@gmail.com", "Password");
                 MailMessage msgobj = new MailMessage();
                 msgobj.To.Add(TextBox1.Text);
-                msgobj.From = new MailAddress("cdac.ingenious@gmail.com");
+                msgobj.From = new MailAddress("cdac@gmail.com");
                 msgobj.Subject = "CDAC INGENIOUS Password";
                 msgobj.Body = String.Format("Hello Your Email Address and Password is \n Email " + Email7+ " \n Password : "  +password);
                 client.Send(msgobj);
