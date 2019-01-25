@@ -1,0 +1,36 @@
+SELECT column-names
+  FROM table-name1 JOIN table-name2 
+    ON column-name1 = column-name2
+ WHERE condition
+ 
+ 
+ ------------------------------------------------
+ Fetching data from multiple table by single query
+ 
+ SELECT column-names
+  FROM table1 
+  JOIN table2 
+    ON table1.Id = table2.Id
+    JOIN table-name3 
+    ON table1.Id = table3.Id
+    JOIN table-name4 
+    ON table1.Id = table4.Id
+ WHERE Id = 11
+ //---------------------------------------------------
+ 
+ SqlConnection cn = new SqlConnection();
+            cn.ConnectionString = @"Data Source=(LocalDb)\MSSqlLocalDb;AttachDbFilename=C:\Users\dell\Project.mdf;Integrated Security=True";
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = cn;
+            cmd.CommandType = CommandType.Text;
+          //  cmd.CommandText = "Select Email , ConfirmPassword ,MobileNo from Registration  where Email = @UserEmail";
+            cmd.Parameters.AddWithValue("@UserEmail", TextBox1.Text);
+            cn.Open();
+            SqlDataReader da = cmd.ExecuteReader();
+
+            if (da.Read())
+            {
+                string Email7 = da["Email"].ToString();
+                string password = da["ConfirmPassword"].ToString();
+                string MobileNo7 = da["MobileNo"].ToString();
