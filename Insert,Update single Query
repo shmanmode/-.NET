@@ -1,0 +1,115 @@
+
+//--------- createing Table--------------
+CREATE TABLE [dbo].[Users] (
+    [Id]        INT          NOT NULL,
+    [Name]      VARCHAR (50) NOT NULL,
+    [city] VARCHAR (50) NOT NULL, 
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+
+//-------------Creating Stored Procedure-------------
+CREATE PROCEDURE [dbo].[meee]
+	@Id int ,
+	@Name varchar(50),
+	@City varchar(50)
+AS
+	UPDATE Users set Name=@Name, city=@City where Id=@Id IF @@ROWCOUNT = 0 insert into Users values(@Id, @Name, @City)
+RETURN 0
+
+
+//--------------program.cs file------------
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class _Default : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        SqlConnection cn = new SqlConnection();
+        cn.ConnectionString = @"Data Source=(LocalDb)\MSSqlLocalDb;Initial Catalog=cdacDatabase;Integrated Security=True;Pooling=False";
+        SqlCommand cmdInsert = new SqlCommand();
+        cmdInsert.Connection = cn;
+        cmdInsert.CommandType = CommandType.StoredProcedure;
+        cmdInsert.CommandText = "meee";
+        //cmdInsert.CommandText = " update Users set Name=@Name,City=@pin where Id=@EmpNo IF @@ROWCOUNT = 0 " +
+
+        //    "insert into Users values(@EmpNo, @Name, @pin) ";
+
+        cmdInsert.Parameters.AddWithValue("@Id", TextBox1.Text);
+        cmdInsert.Parameters.AddWithValue("@Name", TextBox2.Text);
+        cmdInsert.Parameters.AddWithValue("@City", TextBox3.Text);
+
+        cn.Open();
+        cmdInsert.ExecuteNonQuery();
+        cn.Close();
+    }
+}
+
+//------------------------UI.aspx file-----------
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 181px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <div>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        </div>
+    </form>
+</body>
+</html>
